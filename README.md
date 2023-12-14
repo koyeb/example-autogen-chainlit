@@ -51,8 +51,8 @@ On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** but
 1. Select `GitHub` as the deployment method to use
 2. In the repositories list, select the repository you just forked
 3. Specify the branch to deploy, in this case `main`
-4. To let Koyeb know how to launch the application, add `chainlit run main.py`` as the run command
-5. Click **Advanced** to view additional settings. Click the **Add Variable** button to add your OpenAI API key named `OPENAI_API_KEY``.
+4. To let Koyeb know how to launch the application, add `chainlit run main.py` as the run command
+5. Click **Advanced** to view additional settings. Click the **Add Variable** button to add your OpenAI API key named `OPENAI_API_KEY`.
 6. Then, give your App a name, i.e `autogen-on-koyeb`, and click **Create App.**
 
 You land on the deployment page where you can follow the build of your AutoGen and Chainlit application. Once the build is completed, your application is being deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
