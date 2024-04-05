@@ -46,14 +46,13 @@ If you want to customize and enhance this application, you need to fork this rep
 If you used the **Deploy to Koyeb** button, you can simply link your service to your forked repository to be able to push changes.
 Alternatively, you can manually create the application as described below.
 
-On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** button to go to the App creation page.
+On the [Koyeb Control Panel](//app.koyeb.com/apps), on the **Overview** tab, click the **Create Web Service** button to begin.
 
-1. Select `GitHub` as the deployment method to use
-2. In the repositories list, select the repository you just forked
-3. Specify the branch to deploy, in this case `main`
-4. To let Koyeb know how to launch the application, add `chainlit run main.py` as the run command
-5. Click **Advanced** to view additional settings. Click the **Add Variable** button to add your OpenAI API key named `OPENAI_API_KEY`.
-6. Then, give your App a name, i.e `autogen-on-koyeb`, and click **Create App.**
+1. Select **GitHub** as the deployment method.
+2. In the repositories list, select the repository you just forked.
+3. In the **Builder** section, enable the **Override** toggle associated with the **Run command** and enter `chainlit run main.py` in the field.
+4. In the **Environment variables** section, click the **Add variable** button to an `OPENAI_API_KEY` variable set to your OpenAI API key.
+5. Choose a name for your App and Service, for example `autogen-on-koyeb`, and click **Deploy**.
 
 You land on the deployment page where you can follow the build of your AutoGen and Chainlit application. Once the build is completed, your application is being deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
 
